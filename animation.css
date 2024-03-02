@@ -1,0 +1,127 @@
+.circle{
+    width: 400px;
+            height: 100px;
+            background-color: #ee9f27; /* Change the background color as desired */
+            border-radius: 50%;
+            position:absolute;
+            left:20%;
+        
+        
+      height:400px;  
+}
+.circle:hover{
+background-color: orangered;
+}
+.numbers{
+    position:absolute;
+    padding:2px;
+    font-family: sans-serif;
+}
+.numbers:nth-of-type(12){
+    left:50%;
+    top:10%;
+
+}
+.numbers:nth-of-type(1){
+    left:68%;
+    top:16%;
+}
+.numbers:nth-of-type(2){
+    left:78%;
+    top:32%;
+
+}
+.numbers:nth-of-type(3){
+   left:84%;
+   top:50%;
+
+}
+.numbers:nth-of-type(4){
+    left:78%;
+    bottom:32%;
+
+}
+.numbers:nth-of-type(5){
+    left:68%;
+    bottom:16%;
+
+}
+.numbers:nth-of-type(6){
+    left:50%;
+    bottom:10%;
+
+}
+.numbers:nth-of-type(7){
+    right:63%;
+    bottom:16%;  
+
+}
+.numbers:nth-of-type(8){
+    right:78%;
+    bottom:32%;
+
+}
+.numbers:nth-of-type(9){
+    right:84%;
+    top:50%;    
+
+}
+.numbers:nth-of-type(10){
+    right:78%;
+    top:32%;
+
+}
+.numbers:nth-of-type(11){
+    right:63%;
+    top:16%; 
+
+}
+.hour-hand{
+    background-color: black;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 60px;
+      border-top-right-radius: 70%;
+      border-bottom-left-radius: 70%;
+      animation: hands 216000s ease-in-out infinite;
+
+}
+.minute-hand{
+    background-color: black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:8px;
+    height:80px;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 70%;
+    animation: hands 3600s ease-in-out infinite;
+    transform-origin: 0% 0%;
+    animation-delay: 60s;
+}
+.second-hand{
+    background-color: black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:8px;
+    height:100px;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 70%;
+    animation: hands 60s ease-in-out infinite;
+    transform-origin: 0% 0%;
+
+}
+@keyframes hands{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+body{
+    background-color: black;
+}
